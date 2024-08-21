@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="cabecalho__menu">
+        <nav class="cabecalho__menu">
+            <a class="cabecalho__menu__link" href="index.html">Home</a>
+        </nav>
+    </header>
+    <h1>Deseja conversar comigo?</h1>
+    <h1>Preencha o formulário abaixo!</h1>
+
+    <form class="contato">
+        <label for="nomesobrenome">Nome e Sobrenome</label>
+        <input type="text" id="nomesobrenome" class="input-test" required> <br><br>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" class="input-test" required placeholder="seuemail@dominio.com"><br><br>
+
+        <label for="telefone">Telefone</label>
+        <input type="tel" id="telefone" class="input-test" required placeholder="(XX) XXXXX-XXXX"> <br><br>
+
+        <label for="mensagem">Mensagem</label>
+        <textarea cols="70" rows="10" id="mensagem" required></textarea><br><br>
+
+        <fieldset>
+                <legend>Como prefere o nosso contato</legend>
+
+                <label for="radio-email"><input type="radio" name="contato" value="email" id="radio-email"> Email</label>
+
+                <label for="radio-telefone"><input type="radio" name="contato" value="telefone" id="radio-telefone"> Telefone</label>
+
+                <label for="radio-whatsapp"><input type="radio" name="contato" value="whatsapp" id="radio-whatsapp" checked> Whatsapp</label>
+
+
+        </fieldset>
+
+        <fieldset>
+        <legend>Qual horário prefere ser atendido?</legend>
+
+            <select>
+                <option>Manhã</option>
+                <option>Tarde</option>
+                <option>Noite</option>
+            </select>
+        </fieldset>
+
+
+
+        <input class="enviar" type="submit" value="Enviar formulário" class="enviar">
+
+
+    </form>
+    <footer>
+        <h1 class="rodape">Desenvolvido por IVAN FARIAS</h1>
+    </footer>
+</body>
+</html>
